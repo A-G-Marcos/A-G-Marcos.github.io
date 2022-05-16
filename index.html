@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Actividad Industrias</title>
+</head>
+
+<body>
+
+<h1>INDUSTRIAS STARFUERTE</h1>
+
+<form name="Formulario">
+<fieldset><legend>FORMULARIO DE PEDIDO</legend>
+
+<b>> Paso 1. Identificaci&oacute;n</b>
+<fieldset><legend>Datos del Cliente</legend>
+<br>Correo Electr&oacute;nico<br>
+<input type="text" name="Correo" size="50" maxlength="40" value="" autofocus>
+<br><br>
+N&uacute;mero de Tel&eacute;fono<br>
+<input type="text" name="Tel" minlength="11" maxlength="11" value="34"><br>
+<i>(Introducir n&uacute;m. sin espacios)</i>
+<br><br>
+Contraseña: <input type="password" name="Contrasena" size="10" minlength="6" maxlength="30" value="" placeholder="M&iacute;n. 6 caract.">
+</fieldset><br>
+
+<fieldset><legend>Tipo de Cliente</legend>
+<input type="radio" name="TipoCliente" value="Partic" checked> Particular<br>
+<input type="radio" name="TipoCliente" value="Asoc"> Asociaci&oacute;n<br>
+<input type="radio" name="TipoCliente" value="Empr"> Empresa<br>
+</fieldset><br>
+
+<b>> Paso 2. Pedido</b><br>
+<fieldset><legend>Datos del Producto</legend>
+Producto<br>
+<select name="Menu" size="8" multiple>
+<optgroup label="Armaduras">
+<option value="A1" selected>AR001 Oro Reluciente</option>
+<option value="A2">AR002 Plata Pulida</option>
+<option value="A3">AR003 Bronce Reforzado</option>
+</optgroup>
+<optgroup label="Armaduras">
+<option value="E1" selected>EX001 Escudo</option>
+<option value="E2">EX002 Invisibilidad</option>
+</optgroup>
+</select>
+</fieldset><br>
+
+<fieldset><legend>Información de Inter&eacute;s</legend>
+Comentarios<br>
+<textarea rows="6" cols="55" maxlength="1000" placeholder="Escriba aqu&iacute; sus comentarios, m&aacute;x. 1000 caracteres"></textarea>
+<br><input type="checkbox" checked> Acepto recibir informaci&oacute;n publicitaria
+</fieldset><br>
+
+<fieldset><legend>Datos de Env&iacute;o</legend>
+<br>Direcci&oacute;n: <input type="text" name="Direccion" size="50" value=""><br><br>
+Ciudad: <input type="text" name="Ciudad" size="50" value=""><br><br>
+C&oacute;digo Postal: <input type="number" name="CP" size="50" maxlength="5" value="">
+</fieldset><br>
+
+<fieldset><legend>Datos Bancarios</legend>
+Nombre de la entidad: <input type="text" name="Entidad" size="50" value=""><br><br>
+Nº de cuenta: <input type="text" name="number" size="50" value="">
+</fieldset><br>
+
+<input type="submit" name="Enviar" value="ENVIAR PEDIDO">  <input type="reset" name="Reiniciar" value="RESET">
+
+</fieldset>
+</form>
+
+</body>
+
+</html>
+
